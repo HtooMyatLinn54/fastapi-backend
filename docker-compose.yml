@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: myfastapiapp
+    ports:
+      - "80:80"
+    environment:
+      - PORT=80
